@@ -1,0 +1,7 @@
+{
+  "name": "just-me",
+  "version": "0.0.0",
+  "devDependencies": {
+    "bower": "~1.2.7"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "just_me",
+  "version": "0.0.0",
+  "authors": [
+    "Rosa Durante <rosamaria.durante@gmail.com>"
+  ],
+  "main": "app/base.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.0.7",
+    "jquery": "~1.9.1",
+    "requirejs": "~2.1.8",
+    "underscore": "~1.5.2",
+    "font-awesome": "~3.2.1",
+    "modernizr": "~2.5.3",
+    "bootstrap-sass": "~2.3.1"
+  }
+}
