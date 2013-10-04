@@ -1,0 +1,32 @@
+<div class="hero-unit">
+
+	<div class="alerts animate-container">
+		<div ng-repeat="alert in alerts" class="alert {{ alert.type }} animate-repeat">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>{{ alert.type_label }}</strong> {{ alert.label }}
+		</div>
+	</div>
+
+	<div class="page-header">
+		<h1>Hello there!</h1>
+	</div>
+
+	<form ng-submit="addEntry()">
+		<div class="well well-small">Add a new Social Network in your list:</div>
+		<input type="text" ng-model="userName" size="30" placeholder="Type your username">
+		<select ng-model="socialNetwork">
+			<option ng-repeat="(val, network) in socialNetworks" value="{{val}}">{{network.label}}</option>
+		</select>
+		<div><input class="btn btn-primary" type="submit" value="Submit"></div>
+	</form>
+	<div class="accounts">
+		<div ng-repeat="account in accounts" class="account well well-small">
+			<span><b>{{ account.network }}</b>: <a target="_blank" href="{{ account.url }}{{ account.name }}">{{ account.name }}</a></span>
+			<button class="btn btn-danger" ng-click="removeEntry($index)">x</button>
+		</div>
+	</div>
+
+	<!-- <div class="right" ng-show="accounts.length">
+		<button class="btn btn-success .btn-large" ng-click="saveAccounts()">Save</button>
+	</div> -->
+</div>

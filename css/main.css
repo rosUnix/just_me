@@ -1,0 +1,36 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 30px auto 0 auto;
+    width: 700px;
+    font-weight: 200;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.accounts {
+    margin-top: 10px;
+}
+.accounts .account {
+    position: relative;
+}
+.accounts .account button {
+    position: absolute;
+    right: 10px;
+}
+
+.right {
+    text-align: right;
+}
